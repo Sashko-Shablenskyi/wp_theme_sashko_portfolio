@@ -332,20 +332,18 @@ add_action('wp_footer', 'custom_class');
 
 function custom_class() {
     ?>
-    <script>
-    jQuery(document).ready(function($) {
-        var maskedInputs = $('input[data-mask]');
+<script>
+jQuery(document).ready(function($) {
+    var maskedInputs = $('input[data-mask]');
 
-        maskedInputs.on('change', function() {
-            if ($(this).val().trim() !== '') {
-                $(this).addClass('has-text');
-            } else {
-                $(this).removeClass('has-text');
-            }
-        });
+    maskedInputs.on('change', function() {
+        if ($(this).val().trim() !== '') {
+            $(this).addClass('has-text');
+        } else {
+            $(this).removeClass('has-text');
+        }
     });
-    </script>
-    <?php
+});
+</script>
+<?php
 }
-
-

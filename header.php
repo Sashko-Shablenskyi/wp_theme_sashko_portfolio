@@ -12,15 +12,15 @@
 ?>
 
 <!DOCTYPE html>
-<html  <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?>>
 
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="format-detection" content="telephone=no" />
-	<link rel="shortcut icon" href="favicon.ico" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>
-		<?php
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        <?php
 			if (is_front_page()) {
 				bloginfo('name');
 				echo ' | ';
@@ -29,26 +29,26 @@
 				wp_title('');
 			}
 		?>
-	</title>
+    </title>
 
-	<?php wp_head(); ?>
+    <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-	<div class="wrapper">
-		<header class="header">
-			<div class="header__container">
-				<div class="header__inner">
-					<div class="header__logo">
-						<?php echo get_custom_logo(); ?> 
-					</div>
+    <?php wp_body_open(); ?>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__inner">
+                    <div class="header__logo">
+                        <?php echo get_custom_logo(); ?>
+                    </div>
 
-					<div class="header__menu menu" id="menu">
-						<div class="menu__bg"></div>
-						<nav class="menu__body">
-							<ul class="menu__list">
-								<?php
+                    <div class="header__menu menu" id="menu">
+                        <div class="menu__bg"></div>
+                        <nav class="menu__body">
+                            <ul class="menu__list">
+                                <?php
 								if (function_exists('pll_current_language')) {
 									$current_language = pll_current_language(); // Отримати поточну мову
 
@@ -62,19 +62,19 @@
 									}
 								}
 								?>
-								<div class="switcher">
-									<?php custom_language_switcher(); ?>
-									<!-- <div class="switcher__selector"></div>s -->
-								</div>
-							</ul>
-						</nav>
-					</div>
+                                <div class="switcher">
+                                    <?php custom_language_switcher(); ?>
+                                    <!-- <div class="switcher__selector"></div>s -->
+                                </div>
+                            </ul>
+                        </nav>
+                    </div>
 
-					<div class="header__right">
-						<button type="button" class="icon-menu">
-							<span></span>
-						</button>
-					</div>
-				</div>
-			</div>
-		</header>
+                    <div class="header__right">
+                        <button type="button" class="icon-menu">
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>

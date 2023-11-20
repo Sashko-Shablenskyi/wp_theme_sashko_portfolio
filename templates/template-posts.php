@@ -11,16 +11,16 @@
             <h1 class="title">Portfolio</h1>
 
             <div class="articles__filter filter">
-                <button data-filter="*" class="filter__btn filter__btn--active">
+                <button data-filter="*" class="filter__btn filter__btn--active" type="button">
                     All
                 </button>
-                <button data-filter="pure-js" class="filter__btn">
+                <button data-filter="layouts" class="filter__btn" type="button">
                     Layouts
                 </button>
-                <button data-filter="javascript" class="filter__btn">
+                <button data-filter="pure-js" class="filter__btn" type="button">
                     JavaScript
                 </button>
-                <button data-filter="wordpress" class="filter__btn">
+                <button data-filter="wordpress" class="filter__btn" type="button">
                     WordPress
                 </button>
             </div>
@@ -69,6 +69,8 @@
                         </div>
                     </div>
                 </article>
+
+
                 <?php
                     endwhile;
                         wp_reset_postdata(); // Скидаємо дані після завершення циклу
@@ -77,6 +79,38 @@
                 endif;
                 ?>
 
+                <!-- <article class="articles__item article article--active" data-filter="layouts">
+                    <div class="article__img">
+                        <a href="#">
+                            <picture>
+                                <source srcset="img/portfolio/Rectangle.webp" type="image/webp"><img
+                                    src="img/portfolio/Rectangle.jpg" alt="" />
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="article__body">
+                        <h2 class="article__title">
+                            <a class="article__title-link" href="#">
+                                Article Title 0
+                            </a>
+                        </h2>
+                        <div class="article__descr">
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Dicta illo totameat deserunt tenetur iusto doloremque
+                                laborum soluta!
+                            </p>
+                        </div>
+
+                        <div class="article__btns">
+                            <a href="#" class="btn article__btn"> Site </a>
+                            <a href="#" class="btn btn--transparent article__btn">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
                 <article data-filter="layouts" class="articles__item article article--active">
                     <div class="article__img">
                         <a href="#">
@@ -108,264 +142,12 @@
                             </a>
                         </div>
                     </div>
-                </article>
-                <article data-filter="layouts" class="articles__item article article--active">
-                    <div class="article__img">
-                        <a href="#">
-                            <picture>
-                                <source srcset="img/portfolio/Rectangle.webp" type="image/webp"><img
-                                    src="img/portfolio/Rectangle.jpg" alt="" />
-                            </picture>
-                        </a>
-                    </div>
-                    <div class="article__body">
-                        <h2 class="article__title">
-                            <a class="article__title-link" href="#">
-                                Article Title
-                            </a>
-                        </h2>
-                        <div class="article__descr">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Dicta illo totam ipsa, modi blanditiis fugiat, harum
-                            necessitatibus optio corrupti explicabo culpa ratione veniam
-                            placeat deserunt tenetur iusto doloremque laborum soluta!
-                        </div>
+                </article> -->
 
-                        <div class="article__btns">
-                            <a href="#" class="btn article__btn">
-                                Site
-                            </a>
-                            <a href="#" class="btn btn--transparent article__btn">
-                                GitHub
-                            </a>
-                        </div>
-                    </div>
-                </article>
-                <article data-filter="javascript" class="articles__item article article--active">
-                    <div class="article__img">
-                        <a href="#">
-                            <picture>
-                                <source srcset="img/portfolio/Rectangle.webp" type="image/webp"><img
-                                    src="img/portfolio/Rectangle.jpg" alt="" />
-                            </picture>
-                        </a>
-                    </div>
-                    <div class="article__body">
-                        <h2 class="article__title">
-                            <a class="article__title-link" href="#">
-                                Article Title
-                            </a>
-                        </h2>
-                        <div class="article__descr">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Dicta illo totam ipsa, modi blanditiis fugiat, harum
-                            necessitatibus optio corrupti explicabo culpa ratione veniam
-                            placeat deserunt tenetur iusto doloremque laborum soluta!
-                        </div>
-
-                        <div class="article__btns">
-                            <a href="#" class="btn article__btn">
-                                Site
-                            </a>
-                            <a href="#" class="btn btn--transparent article__btn">
-                                GitHub
-                            </a>
-                        </div>
-                    </div>
-                </article>
-                <article data-filter="javascript" class="articles__item article article--active">
-                    <div class="article__img">
-                        <a href="#">
-                            <picture>
-                                <source srcset="img/portfolio/Rectangle.webp" type="image/webp"><img
-                                    src="img/portfolio/Rectangle.jpg" alt="" />
-                            </picture>
-                        </a>
-                    </div>
-                    <div class="article__body">
-                        <h2 class="article__title">
-                            <a class="article__title-link" href="#">
-                                Article Title
-                            </a>
-                        </h2>
-                        <div class="article__descr">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Dicta illo totam ipsa, modi blanditiis fugiat, harum
-                            necessitatibus optio corrupti explicabo culpa ratione veniam
-                            placeat deserunt tenetur iusto doloremque laborum soluta!
-                        </div>
-
-                        <div class="article__btns">
-                            <a href="#" class="btn article__btn">
-                                Site
-                            </a>
-                            <a href="#" class="btn btn--transparent article__btn">
-                                GitHub
-                            </a>
-                        </div>
-                    </div>
-                </article>
-                <article data-filter="javascript" class="articles__item article article--active">
-                    <div class="article__img">
-                        <a href="#">
-                            <picture>
-                                <source srcset="img/portfolio/Rectangle.webp" type="image/webp"><img
-                                    src="img/portfolio/Rectangle.jpg" alt="" />
-                            </picture>
-                        </a>
-                    </div>
-                    <div class="article__body">
-                        <h2 class="article__title">
-                            <a class="article__title-link" href="#">
-                                Article Title
-                            </a>
-                        </h2>
-                        <div class="article__descr">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Dicta illo totam ipsa, modi blanditiis fugiat, harum
-                            necessitatibus optio corrupti explicabo culpa ratione veniam
-                            placeat deserunt tenetur iusto doloremque laborum soluta!
-                        </div>
-
-                        <div class="article__btns">
-                            <a href="#" class="btn article__btn">
-                                Site
-                            </a>
-                            <a href="#" class="btn btn--transparent article__btn">
-                                GitHub
-                            </a>
-                        </div>
-                    </div>
-                </article>
-                <article data-filter="wordpress" class="articles__item article article--active">
-                    <div class="article__img">
-                        <a href="#">
-                            <picture>
-                                <source srcset="img/portfolio/Rectangle.webp" type="image/webp"><img
-                                    src="img/portfolio/Rectangle.jpg" alt="" />
-                            </picture>
-                        </a>
-                    </div>
-                    <div class="article__body">
-                        <h2 class="article__title">
-                            <a class="article__title-link" href="#">
-                                Article Title
-                            </a>
-                        </h2>
-                        <div class="article__descr">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Dicta illo totam ipsa, modi blanditiis fugiat, harum
-                            necessitatibus optio corrupti explicabo culpa ratione veniam
-                            placeat deserunt tenetur iusto doloremque laborum soluta!
-                        </div>
-
-                        <div class="article__btns">
-                            <a href="#" class="btn article__btn">
-                                Site
-                            </a>
-                            <a href="#" class="btn btn--transparent article__btn">
-                                GitHub
-                            </a>
-                        </div>
-                    </div>
-                </article>
-                <article data-filter="wordpress" class="articles__item article article--active">
-                    <div class="article__img">
-                        <a href="#">
-                            <picture>
-                                <source srcset="img/portfolio/Rectangle.webp" type="image/webp"><img
-                                    src="img/portfolio/Rectangle.jpg" alt="" />
-                            </picture>
-                        </a>
-                    </div>
-                    <div class="article__body">
-                        <h2 class="article__title">
-                            <a class="article__title-link" href="#">
-                                Article Title
-                            </a>
-                        </h2>
-                        <div class="article__descr">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Dicta illo totam ipsa, modi blanditiis fugiat, harum
-                            necessitatibus optio corrupti explicabo culpa ratione veniam
-                            placeat deserunt tenetur iusto doloremque laborum soluta!
-                        </div>
-
-                        <div class="article__btns">
-                            <a href="#" class="btn article__btn">
-                                Site
-                            </a>
-                            <a href="#" class="btn btn--transparent article__btn">
-                                GitHub
-                            </a>
-                        </div>
-                    </div>
-                </article>
-                <article data-filter="wordpress" class="articles__item article article--active">
-                    <div class="article__img">
-                        <a href="#">
-                            <picture>
-                                <source srcset="img/portfolio/Rectangle.webp" type="image/webp"><img
-                                    src="img/portfolio/Rectangle.jpg" alt="" />
-                            </picture>
-                        </a>
-                    </div>
-                    <div class="article__body">
-                        <h2 class="article__title">
-                            <a class="article__title-link" href="#">
-                                Article Title
-                            </a>
-                        </h2>
-                        <div class="article__descr">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Dicta illo totam ipsa, modi blanditiis fugiat, harum
-                            necessitatibus optio corrupti explicabo culpa ratione veniam
-                            placeat deserunt tenetur iusto doloremque laborum soluta!
-                        </div>
-
-                        <div class="article__btns">
-                            <a href="#" class="btn article__btn">
-                                Site
-                            </a>
-                            <a href="#" class="btn btn--transparent article__btn">
-                                GitHub
-                            </a>
-                        </div>
-                    </div>
-                </article>
-                <article data-filter="wordpress" class="articles__item article article--active">
-                    <div class="article__img">
-                        <a href="#">
-                            <picture>
-                                <source srcset="img/portfolio/Rectangle.webp" type="image/webp"><img
-                                    src="img/portfolio/Rectangle.jpg" alt="" />
-                            </picture>
-                        </a>
-                    </div>
-                    <div class="article__body">
-                        <h2 class="article__title">
-                            <a class="article__title-link" href="#">
-                                Article Title
-                            </a>
-                        </h2>
-                        <div class="article__descr">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Dicta illo totam ipsa, modi blanditiis fugiat, harum
-                            necessitatibus optio corrupti explicabo culpa ratione veniam
-                            placeat deserunt tenetur iusto doloremque laborum soluta!
-                        </div>
-
-                        <div class="article__btns">
-                            <a href="#" class="btn article__btn">
-                                Site
-                            </a>
-                            <a href="#" class="btn btn--transparent article__btn">
-                                GitHub
-                            </a>
-                        </div>
-                    </div>
-                </article>
             </div>
         </div>
     </section>
 </main>
+
+<?php
+get_footer();
